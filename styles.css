@@ -7,7 +7,8 @@ body{
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3041c7;
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -15,13 +16,52 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: white;
 }
 .title{
-  background-color: #777;
+  background-color: white;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
+/*
+.wobble{
+  background-height: 100;
+  background-width: 100;
+  background-image: url("http://emojipedia-us.s3.amazonaws.com/cache/8b/af/8bafcefa2b25ab3642b2d5cbdb9a804a.png");
+}*/
+
+.wobble { 
+  height: 110px;
+  width: 75px;
   position:absolute;
+  background-image: url("blinkydancer.png");
 }
+
+.rotateInUpLeft {
+  height: 110px;
+  width: 75px;
+  position:absolute;
+  background-image: url("balletdancer.jpg");
+}
+
+.bounce {
+  height: 110px;
+  width: 75px;
+  position:absolute;
+  background-image: url("hiphopdancer.png");
+}
+
+.lineLeft {
+  float: left;
+  position: static;
+  
+
+}
+
+.lineRight {
+  float: right;
+  position: static;
+}
+
+.lineBottom {
+  float: left;
+  position: static;
+ }
