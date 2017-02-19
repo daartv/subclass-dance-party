@@ -31,7 +31,10 @@ body, a:link, a:visited, a:active{
 .wobble { 
   height: 110px;
   width: 75px;
-  position:absolute;
+  position:absolute;  
+}
+
+.blinky {
   background-image: url("blinkydancer.png");
 }
 
@@ -39,6 +42,9 @@ body, a:link, a:visited, a:active{
   height: 110px;
   width: 75px;
   position:absolute;
+}
+
+.ballet {
   background-image: url("balletdancer.jpg");
 }
 
@@ -46,14 +52,15 @@ body, a:link, a:visited, a:active{
   height: 110px;
   width: 75px;
   position:absolute;
+}
+
+.hiphop {
   background-image: url("hiphopdancer.png");
 }
 
 .lineLeft {
   float: left;
   position: static;
-  
-
 }
 
 .lineRight {
@@ -64,4 +71,3 @@ body, a:link, a:visited, a:active{
 .lineBottom {
   float: left;
   position: static;
- }

@@ -1,7 +1,9 @@
-var makeHiphopDancer = function(top, left, timeBetweenSteps) {
+var makeHiphopDancer = function(top, left, timeBetweenSteps, anime) {
  
-  makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass('animated bounce infinite');
+  makeDancer.call(this, top, left, timeBetweenSteps);   
+  this.type = 'hiphop';
+  this.style = 'bounce';
+  this.$node.addClass('animated infinite ' + this.type + ' ' + this.style);
 };
 
 makeHiphopDancer.prototype = Object.create(makeDancer.prototype);
@@ -10,9 +12,8 @@ makeHiphopDancer.prototype.constructor = makeHiphopDancer;
 
 makeHiphopDancer.prototype.step = function() {
     
-  makeDancer.prototype.step.call(this);
+makeDancer.prototype.step.call(this);
 
-  /*this.$node.toggle();*/
 };
 
 makeHiphopDancer.prototype.lineUp = function() {

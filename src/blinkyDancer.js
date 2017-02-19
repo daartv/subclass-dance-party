@@ -1,8 +1,9 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+var makeBlinkyDancer = function(top, left, timeBetweenSteps, anime) {
  //debugger;
-  makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass('animated wobble infinite');
-  console.log(JSON.stringify(window.makeBlinkyDancer));
+  makeDancer.call(this, top, left, timeBetweenSteps);  
+  this.type = 'blinky';
+  this.style = 'wobble';
+  this.$node.addClass('animated infinite ' + this.type + ' ' + this.style); 
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
@@ -13,11 +14,9 @@ makeBlinkyDancer.prototype.step = function() {
     
   makeDancer.prototype.step.call(this);
 
-  //this.$node.toggle();
 };
 
 makeBlinkyDancer.prototype.lineUp = function() {
   this.$node.removeClass('dancer');
   this.$node.addClass('lineLeft');
 };
-

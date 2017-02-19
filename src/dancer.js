@@ -8,7 +8,8 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this.setPosition(top, left);
   this.step();
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node.on('mouseover', this.changeSize.bind(this));
+  this.$node.on('mouseover', this.select.bind(this));
+
 
 };
 
@@ -27,8 +28,8 @@ makeDancer.prototype.setPosition = function(top, left) {
   
 };
 
-makeDancer.prototype.changeSize = function() {
+makeDancer.prototype.select = function() {
   this.$node.css({
-    'height': '400px'
+    'border': 'solid red 4px'
   });
 };

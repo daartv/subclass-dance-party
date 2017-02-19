@@ -1,9 +1,10 @@
-var makeBalletDancer = function(top, left, timeBetweenSteps) {
+
+var makeBalletDancer = function(top, left, timeBetweenSteps, anime) {
  
   makeDancer.call(this, top, left, timeBetweenSteps);
-  /*this.$node = $('<span class="ballet"></span>');*/
-  this.$node.addClass('animated rotateInUpLeft infinite');
-
+  this.type = 'ballet';
+  this.style = 'rotateInUpLeft';
+  this.$node.addClass('animated infinite ' + this.type + ' ' + this.style);
 };
 
 makeBalletDancer.prototype = Object.create(makeDancer.prototype);
